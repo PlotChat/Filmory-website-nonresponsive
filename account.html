@@ -12,119 +12,57 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="wrapper">
-        <div class="toppage">
-            <hr class="line"></hr>
-            <div class="header">
-                <a href="index.html"><img src=".\images\icon.png"></a>
-                <h1><i>Filmory</i></h1>
-                <div class="searchbar"><img src=".\images\search.png"><input text placeholder="Search for films..."></div>   
-            </div>
-            <div style="clear:both"></div>
-            <div class="menubox">
-                <div class="menubuttonbox">
-                    <a href="index.html">Home</a>
-                </div>
-                <div class="menubuttonbox">
-                    <a href="movies.html">Movies</a>
-                </div>
-                <div class="menubuttonbox">
-                    <a href="shows.html">Shows</a>
-                </div>
-                <div class="menubuttonbox">
-                    <a href="category.html">Category</a>
-                    <div class="dropdown-content">
-                        <a href="#" class="content">Romance</a>
-                        <a href="#" class="content">Action</a>
-                        <a href="#" class="content">Cartoon</a>
-                        <a href="#" class="content">Horror</a>
-                        <a href="#" class="content">Comedy</a>
-                        <a href="#" class="content">Documentary</a>
+    <div class="signinup-page">
+        <div class="signinup">
+            <div class="signinup-form-container">
+                <div class="signinup-title-container">
+                    <div class="signinup-title">
+                        <h1>Sign in to</h1> 
+                    </div>
+                    <div class="signinup-logo">
+                        <img src="./images/icon.png">
+                        <h1 class="signinup-logo-text"><i>Filmory</i></h1>
                     </div>
                 </div>
-                <div class="menubuttonbox">
-                    <a href="account.html">Account</a>
-                    <div class="dropdown-content">
-                        <a href="#" class="content">Profile</a>
-                        <a href="#" class="content">Settings</a>
+                <div class="signinup-form">
+                    <div class="signinup-email-form">
+                        <h1>Email / Username:</h1>
+                        <input text>
+                    </div>
+                    <div class="signinup-password-form">
+                        <h1>Password:</h1>
+                        <div class="password-form">
+                        <input type="password"><img src="./images/passwordreveal.png" class="password-eye"><img src="./images/passwordreveal2.png" class="password-eye-reveal">
+                        </div>
+                        
+                    </div>
+                    <div class="staysignedin-checkbox-wrap">
+                        <div class="staysignedin-checkbox-container">
+                            <label for="staysignedincheckbox" class="staysignedin-checkbox">
+                                <input type="checkbox" id="staysignedincheckbox">
+                                <span class="staysignedin-checkmark"></span>
+                            </label>
+                            <h1>Stay signed in</h1>
+                        </div>
+                        <div class="forgot-password">
+                            <a href="#"><h1>Forgot password?</h1></a>
+                        </div>
+                    </div>
+                    <div class="signinup-submit-button">
+                        <a href="#"><h1>Sign in</h1></a>
+                    </div>
+                    <div class="signinup-line"></div>
+                    <div class="signinup-options">
+                        <a href="#"><img src="./images/signinupgoogle.png"></a>
+                        <a href="#"><img src="./images/signinupfb.png"></a>
+                        <a href="#"><img src="./images/signinupapple.png"></a>
+                    </div>
+                    <div class="homepage-link">
+                        <a href="index.html">Go back to homepage</a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="footer">
-            <div class="endline"></div>
-            <div class="siteinfo-container">
-                <div class="siteinfo-left">
-                    <div class="siteinfo-content-container">
-                        <div class="siteinfo-content">
-                            <a href="#">About us</a>
-                        </div>
-                        <div class="content-list">
-                            <a href="#" class="list-content">Introduciton</a><br>
-                            <a href="#" class="list-content">Awards</a><br>
-                            <a href="#" class="list-content">Applications</a><br>
-                        </div>    
-                    </div>
-                    <div class="siteinfo-content-container">
-                        <div class="siteinfo-content">
-                            <a href="#">Contacts</a>
-                        </div>
-                        <div class="content-list">
-                            <a href="#" class="list-content">Business email:<br>filmory@filmory.com</a><br>
-                            <a href="#" class="list-content">Hotline:<br>0123456789</a><br>
-                        </div>
-                    </div>
-                    <div class="siteinfo-content-container">      
-                        <div class="siteinfo-content">       
-                            <a href="#">Policies</a>
-                        </div>
-                        <div class="content-list">
-                            <a href="#" class="list-content">Terms of service</a><br>
-                            <a href="#" class="list-content">Refund / Return policy</a><br>
-                            <a href="#" class="list-content">Copyright rights</a>     <br> 
-                        </div>
-                    </div>
-                    <div class="siteinfo-content-container">    
-                        <div class="siteinfo-content">
-                            <a href="#">Follow us</a> 
-                        </div>
-                        <div class="content-list">
-                            <div class="social-list">
-                                <div class="social">
-                                    <a href="https://www.youtube.com" rel="noopener" target="_blank"><img src="./images/youtube.png">Youtube</a>
-                                </div>
-                                <div class="social">
-                                    <a href="https://www.facebook.com" rel="noopener" target="_blank"><img src="./images/facebook.png">Facebook</a>
-                                </div>
-                                <div class="social">
-                                    <a href="https://www.twitter.com" rel="noopener" target="_blank"><img src="./images/twitter.png">Twitter</a>
-                                </div>
-                                <div class="social">
-                                    <a href="https://www.tiktok.com" rel="noopener" target="_blank"><img src="./images/tiktok.png">Tiktok</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="siteinfo-right">
-                    <div class="siteinfo-right-container">
-                        <div class="news-rq">Get updated about our latest news<br> through your emails:</div>
-                        <div class="email">
-                            <div class="email-form">
-                                <img src="./images/mail.png">
-                                <input text placeholder="Enter your email...">
-                            </div>
-                            <div class="email-submit">
-                                <a href="#">Submit email<img src="./images/submit.png"></a>                          
-                            </div>
-                        </div>  
-                    </div>    
-                </div>
-            </div>
-            <div class="copyright">
-            <p>© Filmory 2023. All rights versed</p>
-            </div>
-        </div> 
     </div> 
 </body>
 </html>

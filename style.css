@@ -1,3 +1,7 @@
+html{
+    height:100%;
+}
+
 body{
     background-color:rgb(12, 12, 12);
     height:100%;
@@ -8,9 +12,9 @@ body{
 }
 
 .wrapper{
-    min-height:100%;
-    display:grid;
-    grid-template-rows:auto 1fr auto;
+    height:100%;
+    display:flex;
+    flex-direction:column;
 }
 
 .line{
@@ -36,7 +40,7 @@ body{
     width:45px;
     padding-left:51px;
     padding-top:5px;
-    padding-right:26px;
+    padding-right:15px;
 }
 .header h1{
     overflow:hidden;
@@ -152,9 +156,11 @@ body{
     display:block;
 }
 
+.menubuttonbox a:hover{
+    text-decoration:underline;
+}
 
-
-.menubuttonbox :hover{
+.dropdown-content :hover{
     text-decoration:underline;
 }
 
@@ -167,9 +173,10 @@ body{
 }
 
 .midpage{
-    flex:1 1 auto;
+    flex:1;
     width:100%;
     margin-top:140px;
+    margin-bottom:80px;
     margin-left:auto;
     margin-right:auto;
 }
@@ -297,7 +304,6 @@ body{
     padding-left:10px;
     padding-right:10px;
     margin-top:10px;
-    margin-bottom:80px;
     height:510px;
     display:flex;
     flex-direction:row;
@@ -366,6 +372,7 @@ body{
 
 .siteinfo-container{
     display:flex;
+    flex-direction:row;
     padding-top:30px;
 }
 
@@ -373,30 +380,23 @@ body{
     padding-left:100px;
     display:flex;
     flex-direction:row;
-    width:50%;
+    flex:1;
     
 }
 
 .siteinfo-content-container{
-    overflow:hidden;
-    display:inline-block;
-    justify-content:center;
-    margin-right:45px;
+    overflow:hidden;  
+    margin-right:5px;
     margin-top:10px;
     height:200px;
     width:200px;
 }
 
 .siteinfo-content{
-    display:block;
     height:22px;
 }
 
-.siteinfo-content p{
-    display:inline;
-}
-
-.siteinfo-content a{
+.siteinfo-content h1{
     color:white;
     text-decoration:none;
     font-family:"Open Sans";
@@ -406,7 +406,6 @@ body{
 
 .content-list{
     overflow:hidden;
-    display:block;
     color:white;
     font-family:"Open Sans";
     font-size:15px;
@@ -416,6 +415,11 @@ body{
 .list-content{
     text-decoration:none;
     color:white;
+}
+
+.list-content:hover{
+    text-decoration:underline;
+    text-decoration-color:white;
 }
 
 .content-list img{
@@ -433,9 +437,15 @@ body{
     text-decoration:none;
 }
 
+.social a:hover{
+    text-decoration:underline;
+    text-decoration-color:white;
+}
+
 .siteinfo-right{
+    overflow:hidden;
     padding-right:100px;
-    width:50%;
+    flex:1;
 }
 
 .siteinfo-right-container{
@@ -521,6 +531,315 @@ body{
     vertical-align:middle;
 }
 
+.signinup-page{
+    height:100%;
+    width:100%;
+    background-image:url("images/signuppic.png");
+    background-size:cover;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.signinup{
+    display:flex;
+    flex-direction:column;
+    width:400px;
+    
+}
+
+.signinup-logo{
+    overflow:hidden;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.signinup-logo img{
+    width:30px;
+    height:38px;
+    padding-right:10px;
+}
+
+.signinup-logo h1{
+    font-size:23px;
+    color:white;
+    font-family:'Times New Roman';
+    font-family:inherit;
+}
+
+.signinup-form-container{
+    overflow:hidden;
+    background-color:rgba(7, 10, 28, 0.723);
+    border-color:rgb(76, 105, 252);
+    border-style:solid;
+    border-radius:15px;
+    width:300px;
+    margin-left:auto;
+    margin-right:auto;
+    height:550px;
+}
+
+.signinup-title-container{
+    margin-top:50px;
+    margin-bottom:35px;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+}
+
+.signinup-title{
+    text-align:center;
+    margin-right:17px;
+}
+
+.signinup-title h1{
+    color:white;
+    font-family:"Open Sans";
+    font-size:20px;
+    font-weight:bold;
+}
+
+.signinup-options{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    gap:20px;
+    margin-top:15px;
+    text-align:center;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.signinup-options img{
+    width:30px;
+}
+
+.signinup-form{
+    width:250px;
+    height:400px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.signinup-form h1{
+    color:white;
+    font-family:"Open Sans";
+    font-weight:lighter;
+    font-size:17px;
+}
+
+.signinup-email-form input{
+    width:220px;
+    margin-left:auto;
+    margin-right:auto;
+    height:25px;
+    background-color: rgb(255, 0, 0, 0);
+    border-color:rgb(76, 105, 252);
+    border-style:solid;
+    border-radius:20px;
+    color:white;
+    font-size:14px;
+    font-family:"Open Sans";
+    padding-left:20px;
+}
+
+.signinup-password-form input{
+    width:195px;
+    background-color: rgb(255, 0, 0, 0);
+    border-style:hidden;
+    color:white;
+    font-size:14px;
+    font-family:"Open Sans";
+}
+
+.password-form{
+    position:relative;
+    display:flex;
+    flex-direction:row;
+    width:220px;
+    margin-left:auto;
+    margin-right:auto;
+    height:25px;
+    background-color: rgb(255, 0, 0, 0);
+    border-color:rgb(76, 105, 252);
+    border-style:solid;
+    border-radius:20px;
+    border-width:2px;
+    color:white;
+    font-size:14px;
+    font-family:"Open Sans";
+    padding-left:20px;
+}
+
+.password-form img{
+    width:35px;
+    margin-left:-11px;
+}
+
+.password-eye-reveal{
+    position:absolute;
+    visibility:hidden;
+    right:0;
+}
+
+.password-eye{
+    cursor:pointer;
+}
+
+.password-eye:active{
+    visibility:hidden;
+}
+.password-eye:active ~ .password-eye-reveal{
+    visibility:visible;
+}
+
+.signinup-password-form input,.signinup-email-form input:focus {
+    outline:none;
+}
+
+.signinup-password-form{
+    margin-top:30px;
+}
+
+.staysignedin-checkbox-wrap{
+    position:relative;
+    display:flex;
+    flex-direction:row;
+}
+
+.staysignedin-checkbox{
+    display:inline-block;
+    margin-left:2px;
+    background-color:red;
+    cursor:pointer;
+}
+
+.staysignedin-checkbox input{
+    position:absolute;
+    opacity:0;
+    cursor:pointer;
+}
+
+.staysignedin-checkmark{
+    background-color:rgb(255, 0, 0, 0);
+    border-color:rgb(76, 105, 252);
+    border-style:solid;
+    border-width:2px;
+    border-radius:3px;
+    height:12px;
+    width:12px;
+    left:5px;
+    position:absolute;
+    transition:border-color 0.3s ease;
+}
+
+.staysignedin-checkbox:hover input ~ .staysignedin-checkmark{
+    border-color:rgb(136, 153, 238);
+}
+
+.staysignedin-checkbox input:checked ~ .staysignedin-checkmark:after{
+    display:block;
+}
+
+.staysignedin-checkmark:after{
+    content:"";
+    position:absolute;
+    display:none;
+}
+
+.staysignedin-checkbox input:checked ~ .staysignedin-checkmark:after{
+    display:block;
+}
+
+.staysignedin-checkbox .staysignedin-checkmark:after{
+    left:4px;
+    width:2px;
+    height:8px;
+    border:solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+.staysignedin-checkbox-container{
+    flex:1;
+}
+
+.staysignedin-checkbox-container h1{
+    color:white;
+    display:inline-block;
+    position:absolute;
+    margin-left:25px;
+    margin-top:14px;
+    font-size:13px;
+}
+
+.forgot-password{
+    padding-top:5px;
+}
+
+.forgot-password h1{
+    font-size:13px;
+    flex:1;
+}
+
+.forgot-password a{
+    text-decoration:none
+}
+.forgot-password a:hover{
+    text-decoration:underline;
+    text-decoration-color:white;
+}
+
+.signinup-submit-button h1{
+    margin-top:7px;
+    background-color:rgb(53, 68, 144);
+    text-align:center;
+    border-color:rgb(76, 105, 252);
+    border-style:solid;
+    border-radius:20px;
+    border-width:2px;
+    height:25px;
+    width:240px;
+    margin-left:auto;
+    margin-right:auto;
+    transition:background-color 0.3s ease;
+}
+
+.signinup-submit-button h1:hover{
+    background-color:rgb(71, 96, 218);
+}
+
+.signinup-submit-button a{
+    text-decoration:none;
+}
+
+.signinup-line{
+    border-bottom:1px solid white;
+    width:200px;
+    margin-top:35px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.homepage-link{
+    text-align:center;
+    margin-top:10px;
+}
+
+.homepage-link a{
+    text-decoration:none;
+    color:white;
+    font-family:"Open Sans";
+    font-size:13px;
+}
+
+.homepage-link a:hover{
+    text-decoration:underline;
+    text-decoration-color:white;
+}
+
 .copyright{
     overflow:hidden;
     width:100%;
@@ -534,3 +853,4 @@ body{
     font-size:10px;
     text-align:center;
 }
+
